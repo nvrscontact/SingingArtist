@@ -1,39 +1,39 @@
 import { Link } from "react-router-dom";
 
-export default function Footer(){
-    return(
+export default function Footer() {
+    return (
         <section className="footer">
             <ul className="link">
                 <li>
                     <Link to="" href="">
-                    <img src="/img/youtube.svg" alt="" />
+                        <img src="/img/youtube.svg" alt="" />
                     </Link>
                 </li>
                 <li>
                     <Link to="" href="">
-                    <img src="/img/spotify.svg" alt="" />
+                        <img src="/img/spotify.svg" alt="" />
                     </Link>
                 </li>
                 <li>
                     <Link to="" href="">
-                    <img src="/img/tik-tok.svg" alt="" />
+                        <img src="/img/tik-tok.svg" alt="" />
                     </Link>
                 </li>
                 <li>
                     <Link to="" href="">
-                    <img src="/img/instagram.svg" alt="" />
+                        <img src="/img/instagram.svg" alt="" />
                     </Link>
                 </li>
                 <li>
                     <Link to="" href="">
-                    <img src="/img/x.svg" alt="" />
+                        <img src="/img/x.svg" alt="" />
                     </Link>
                 </li>
             </ul>
 
             <nav>
-                <div>
-                    <h1>Artist</h1>
+                <details>
+                    <summary>Artist <span>+</span></summary>
                     <ul>
                         <li>
                             <Link to="" href="">Contact</Link>
@@ -48,9 +48,9 @@ export default function Footer(){
                             <Link to="" href="">Tour</Link>
                         </li>
                     </ul>
-                </div>
-                    <div>
-                    <h1>Legacy and Privacy</h1>
+                </details>
+                <details>
+                    <summary>Legal and Privacy <span>+</span></summary>
                     <ul>
                         <li>
                             <Link to="" href="">Contact</Link>
@@ -65,10 +65,10 @@ export default function Footer(){
                             <Link to="" href="">Tour</Link>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <h1>Information</h1>
-                    <ul className="link">
+                </details>
+                <details>
+                    <summary>Information <span>+</span></summary>
+                    <ul>
                         <li>
                             <Link to="" href="">Contact</Link>
                         </li>
@@ -82,14 +82,14 @@ export default function Footer(){
                             <Link to="" href="">Tour</Link>
                         </li>
                     </ul>
-                </div>
+                </details>
             </nav>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi qui unde ea placeat, voluptatum amet recusandae voluptate tempore doloribus ipsam optio, minima iste repellat ratione. Culpa, provident tempora? Excepturi! </p>
             <p>If you have accessibility or payment issues, contact us as soon as possible!</p>
 
-        <span>© 2025 Taylor Swift, LLC. <br /> All Rights Reserved</span>
-        
+            <span>© 2025 Taylor Swift, LLC. <br /> All Rights Reserved</span>
+
         </section>
     )
 }

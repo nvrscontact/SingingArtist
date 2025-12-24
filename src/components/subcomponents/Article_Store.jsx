@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import One_Button from './One_Button'
 
 function Article_Store({title,subtitle,img,height,button}) {
   return (
@@ -7,11 +8,9 @@ function Article_Store({title,subtitle,img,height,button}) {
         <h1>{title}</h1>
         <span>{subtitle}</span>
         <img src={img} alt="" style={height={height}} />
-        <ul>
-            <li>
-                <Link className='link' to="">{button} <img src="/img/arrowLink.svg" alt="" /></Link>
-            </li>
-        </ul>
+        
+        <One_Button url={""} msg={"Buy Now"} img={"/img/arrowLink.svg"}/>
+
     </section>
   )
 }

@@ -21,8 +21,8 @@ a{
 
 /* ONE BUTTON ----- */
 .one_Button{
-background-color: rgba(255,255,255,0.1);
-border:none;
+border:1px solid rgba(255,255,255,0.2);
+background:none;
 padding:12px 45px;
 
 
@@ -131,7 +131,7 @@ a {
   position: relative;
 
   h1{
-    font-size: 42px;
+    font-size: 40px;
   }
   img{
     width:100%;
@@ -144,25 +144,21 @@ a {
   }
 
   div.float{
-    top:40px;
-    left:40px;
+    top:25px;
+    left:25px;
   }
 
   section.float{
-    width: 100%;
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    left:50%;
+    flex-direction: column;
+    align-items: start;
+    left:8%;
     bottom:5%;
-    transform: translateX(-50%);
 
     ul{
-      padding-left: 25px;
+      margin-bottom: 25px;
     }
-    button{
-      margin-right: 25px;
-    }
+ 
   }
 
   .billboard{
@@ -227,7 +223,7 @@ a {
   }
 
   p{
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 5px;
   }
   .information{
@@ -244,7 +240,7 @@ a {
     li{
       border:none;
       border-radius: 5px;
-      padding:12px 35px;
+      padding:12px 25px;
       color:rgba(255,255,255,0.7);
       background-color: rgba(255,255,255,0.1);
       
@@ -252,6 +248,7 @@ a {
         display:flex;
         gap:10px;
         align-items: center;
+        font-size: 13px;
       }
       img{
         height: 14px;
@@ -346,11 +343,7 @@ a {
   }
 }
 
-.hasd{
-  width: 100%;
-}
-
-
+/* ----- FOOTER ----- */
 
   .footer > ul {
     display:flex;
@@ -364,7 +357,7 @@ a {
  
   
   .footer{
-    padding:30px;
+    padding:30px 25px;
     background-color: #090909;
 
   nav{
@@ -372,8 +365,32 @@ a {
     padding: 35px 0;
 
     display:flex;
-    gap:50px;
+    flex-direction: column;
     flex-wrap: wrap;
+    gap:20px;
+    
+    summary{
+      font-size: 14px;
+      list-style: none;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span{
+        font-size: 20px;
+      }
+    }
+
+    ul{
+      margin-top: 20px;
+      gap:25px;
+      display:flex;
+      flex-direction: column;
+
+      li a:hover{
+        color:white;
+      }
+    }
 
     h1{
       font-size: 16px;
@@ -395,7 +412,7 @@ a {
 
   p{
     padding-top: 20px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   p:last-of-type{
@@ -403,7 +420,9 @@ a {
   }
 
   span{
-    font-size: 10px;
+    font-size: 8px;
+    display:flex;
+    line-height: 16px;
   }
 
 
@@ -421,25 +440,9 @@ a {
   img{
     height: 200px;
     width: 200px;
-    margin:20px 0;
+    margin:40px 0;
   }
 
-  ul li{
-    display:flex;
-    border:1px solid rgba(255,255,255,0.2);
-    border-radius: 10px;
-    
-    .link{
-      display: flex;
-      align-items: center;
-      gap:10px;
-      padding:0 30px;
-    }
-    img{
-      height: 16px;
-      width:fit-content;
-    }
-  }
 }
 
 /* ------ PAGE STORE ----- */
@@ -488,7 +491,7 @@ a {
 /* ------ PAGE ALBUMS ----- */
 
 .albums{
-  margin:100px 30px;
+  margin:50px 30px;
   display:grid;
   grid-template-columns: repeat(1,1fr);
   place-items: center;

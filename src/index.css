@@ -1,0 +1,497 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: #1a1a1a;
+  color:rgba(255,255,255,0.5);
+  font-family: inter;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color:rgba(255,255,255,0.7);
+}
+
+/* ------ COMPONENTS PERSONAL ----- */
+
+/* ONE BUTTON ----- */
+.one_Button{
+background-color: rgba(255,255,255,0.1);
+border:none;
+padding:12px 45px;
+
+
+a {
+  display:flex;
+  align-items: center;
+  gap:10px;
+  font-size: 15px;
+
+  img {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+}
+
+
+/* ----- NAVBAR ----- */
+
+.navbar{  
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgba(0,0,0,0.5);
+    padding:12px 15px;
+  
+    section{
+      display:flex;
+      gap:15px;
+      align-items: center;
+      font-size: 14px;
+
+      img{
+        height: 20px;
+      }
+    }
+
+  
+  #toggle{
+    display:none;
+  }
+  label img{
+    height: 30px;
+  }
+  .submenu{
+  backdrop-filter:blur(8px);
+  position:absolute;
+  z-index: 2;
+  left:0;
+  right:0;
+  top:55px;
+  background-color: rgba(0,0,0,0.7);
+  display:none;
+  width: 100%;
+  padding:25px 20px;
+
+  ul li a{
+    color:rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    display:flex;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  section{
+    display:flex;
+    gap:5px;
+    width: 100%;
+    
+
+    button{
+      padding:5px 20px;
+      flex-grow:1;
+      margin:20px 0;
+      background-color: rgba(255,255,255,0.1);
+      color:rgba(255,255,255,0.7);
+      padding:12px 0;
+      border:none;
+      border-radius: 2px;
+      font-size: 15px;
+    }
+    
+  }
+  span{
+    font-size: 12px;
+  }
+}
+
+/* se usa adyacente porque es referenciar un hermano y no un padre, encadenarlos no sirve */
+#toggle:checked + label + .submenu{
+  display:flex;
+  flex-direction: column;
+  width: auto;
+}
+}
+
+
+
+/* ----- HERO PRESENTATION ----- */
+
+.hero{
+  position: relative;
+
+  h1{
+    font-size: 42px;
+  }
+  img{
+    width:100%;
+    height: 80vh;
+    filter: brightness(.8);
+  }
+
+  .float{
+    position: absolute;
+  }
+
+  div.float{
+    top:40px;
+    left:40px;
+  }
+
+  section.float{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    left:50%;
+    bottom:5%;
+    transform: translateX(-50%);
+
+    ul{
+      padding-left: 25px;
+    }
+    button{
+      margin-right: 25px;
+    }
+  }
+
+  .billboard{
+    display:flex;
+    flex-direction: column;
+    font-weight: 300;
+    gap:6px;
+  }
+  .billboard li:nth-child(1){
+    font-size: 26px;
+  }
+  .billboard li:nth-child(2){
+    font-size: 18px;
+  }
+  .billboard li:nth-child(3){
+    font-size: 16px;
+  }
+
+  button{
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    display:flex;
+    font-weight: 300;
+    gap: 5px;
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    img{
+      height: 16px;
+    }
+  }
+}
+
+.relucient {
+    background: linear-gradient(15deg, #ff8a36, #ffffff, #ff8a36);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+
+/* ----- ARTICLES PLANTILLA ----- */
+
+.article{
+    margin:150px 40px;
+
+  div{
+    width: 200px;
+    margin:20px 0;
+    display:flex;
+    flex-direction: column;
+
+  }
+
+  img{
+    height: 200px;
+  }
+
+  p{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .information{
+    font-size: 12px;
+    color:rgba(255,255,255,0.4);
+  }
+  .buttons{
+    margin-top: 20px;
+    gap:10px;
+    display:flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    
+    li{
+      border:none;
+      border-radius: 5px;
+      padding:12px 35px;
+      color:rgba(255,255,255,0.7);
+      background-color: rgba(255,255,255,0.1);
+      
+      a{
+        display:flex;
+        gap:10px;
+        align-items: center;
+      }
+      img{
+        height: 14px;
+      }
+    }
+  } 
+}
+
+
+/* ----- ALBUM PRESENTATION ----- */
+
+.albumPresentation{
+
+    div {
+
+      ul{
+      display:flex;
+      gap:5px;
+      font-size: 11px;
+      background-color: rgba(0,0,0,0.3);
+      justify-content: center;
+      padding:10px;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+     }
+    }
+
+  
+}
+
+/* ----- MERCHANDISING ----- */
+
+.merchandising{
+  display:flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+
+  img{
+    height: 300px;
+  }
+}
+
+/* ----- NEWSLETTER ----- */
+
+.newsletter{
+  margin:150px 40px;
+
+  div{
+    width: 100%;
+    margin: 25px 0;
+    gap:10px;
+  }
+}
+
+/* ----- WIDGET SPOTIFY ----- */
+
+.widgetSpotify{
+  margin:150px 40px;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:25px;  
+
+
+  ul{ 
+    display:flex;
+    gap:15px; 
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    li{
+      border:1px solid rgba(255,255,255,0.3);
+      border-radius: 15px;
+      padding:10px 15px;
+      display:flex;
+      align-items: center;
+      gap:5px;
+    }
+    li a{
+      color:white;
+  }
+}
+
+  iframe{
+    width:340px;
+  }
+
+  img{
+    height: 25px;
+  }
+}
+
+.hasd{
+  width: 100%;
+}
+
+
+
+  .footer > ul {
+    display:flex;
+    gap:15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 20px;
+    img{
+      height: 20px;
+    }
+  }
+ 
+  
+  .footer{
+    padding:30px;
+    background-color: #090909;
+
+  nav{
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding: 35px 0;
+
+    display:flex;
+    gap:50px;
+    flex-wrap: wrap;
+
+    h1{
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 20px;
+    }
+
+    ul{
+      display:flex;
+      flex-direction: column;
+      gap:10px;
+      font-size: 13px;
+      
+      li a{
+          color:rgba(255,255,255,0.4);
+      }
+    }
+  }
+
+  p{
+    padding-top: 20px;
+    font-size: 12px;
+  }
+
+  p:last-of-type{
+    padding-bottom: 20px;
+  }
+
+  span{
+    font-size: 10px;
+  }
+
+
+}
+
+
+/* ----- ARTICLE STORE ----- */
+
+.articleStore{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  img{
+    height: 200px;
+    width: 200px;
+    margin:20px 0;
+  }
+
+  ul li{
+    display:flex;
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    
+    .link{
+      display: flex;
+      align-items: center;
+      gap:10px;
+      padding:0 30px;
+    }
+    img{
+      height: 16px;
+      width:fit-content;
+    }
+  }
+}
+
+/* ------ PAGE STORE ----- */
+
+.store{
+  display:flex;
+  flex-direction: column;
+  margin:50px 20px;
+  gap:200px;
+}
+
+
+/* ------ ARTICLE ALBUMS ----- */
+.articleAlbums{
+  width: 300px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width:fit-content;
+
+  h1{
+    font-size: 25px;
+  }
+  img{
+    width: 200px;
+  }
+
+  div{
+    display:flex;
+    flex-direction: column;
+    padding-top:20px;
+    padding-bottom: 30px;
+    
+
+    span{
+      background-color: rgba(0,0,0,0.4);
+      padding: 8px 0;
+      font-size: 13px;
+    }
+
+  }
+}
+
+
+/* ------ PAGE ALBUMS ----- */
+
+.albums{
+  margin:100px 30px;
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+  row-gap:6rem;
+  
+}

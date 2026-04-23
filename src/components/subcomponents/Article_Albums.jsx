@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import One_Button from './One_Button'
 
-function Article_Albums({title,subtitle,img,date}) {
+function Article_Albums({title,subtitle,img,date,url}) {
   return (
     <>
       <section className='articleAlbums'>
@@ -14,7 +14,7 @@ function Article_Albums({title,subtitle,img,date}) {
           <span>{date}</span>
         </div>
 
-      <One_Button url={""} msg={"Listen"} img={"/img/arrowLink.svg"}/>
+      <One_Button url={"/Platforms"} msg={"Listen"} img={"/img/arrowLink.svg"}/>
        
 
       </section>

@@ -15,9 +15,7 @@ export default function Merchandising({title, subtitle, img, minutes, genre, son
                 <li>
                   <a>{button}</a>
                 </li>
-                <li>
-                    <a>{buttonTwo} <img src="/img/arrowLink.svg" alt="" /></a>
-                </li>
+                
             </ul>
             
         </section>

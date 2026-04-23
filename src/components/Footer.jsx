@@ -33,7 +33,7 @@ export default function Footer() {
 
             <nav>
                 <details>
-                    <summary>Artist <span>+</span></summary>
+                    <summary>Artist <img src="/img/arrowDown.svg" alt="" /> </summary>
                     <ul>
                         <li>
                             <Link to="" href="">Contact</Link>
@@ -50,7 +50,7 @@ export default function Footer() {
                     </ul>
                 </details>
                 <details>
-                    <summary>Legal and Privacy <span>+</span></summary>
+                    <summary>Legal and Privacy <img src="/img/arrowDown.svg" alt="" /> </summary>
                     <ul>
                         <li>
                             <Link to="" href="">Contact</Link>
@@ -67,7 +67,7 @@ export default function Footer() {
                     </ul>
                 </details>
                 <details>
-                    <summary>Information <span>+</span></summary>
+                    <summary>Information <img src="/img/arrowDown.svg" alt="" /> </summary>
                     <ul>
                         <li>
                             <Link to="" href="">Contact</Link>
@@ -88,7 +88,7 @@ export default function Footer() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi qui unde ea placeat, voluptatum amet recusandae voluptate tempore doloribus ipsam optio, minima iste repellat ratione. Culpa, provident tempora? Excepturi! </p>
             <p>If you have accessibility or payment issues, contact us as soon as possible!</p>
 
-            <span>© 2025 Taylor Swift, LLC. <br /> All Rights Reserved</span>
+            <span>© 2025 Artist Surname, LLC. <br /> All Rights Reserved</span>
 
         </section>
     )

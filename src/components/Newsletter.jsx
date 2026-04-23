@@ -11,7 +11,7 @@ export default function Newsletter({title,subtitle,p1,p2,button}){
 
             <ul className="buttons">
                 <li>
-                    <a>{button} <img src="/img/arrowLink.svg" alt="" /></a>
+                    <a>{button}</a>
                 </li>
             </ul>
         </section>

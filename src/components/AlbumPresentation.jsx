@@ -23,7 +23,7 @@ export default function AlbumPresentation({title, subtitle, img, minutes, genre,
                 <a>{button}</a>
                 </li>
                 <li>
-                <a>{buttonTwo} <img src="/img/arrowLink.svg" alt="" /></a>
+                <a>{buttonTwo} <img src="/img/musicalNote.svg" alt="" /></a>
                 </li>
             </ul>
         </section>

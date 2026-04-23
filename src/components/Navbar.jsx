@@ -25,14 +25,18 @@ export default function Navbar(){
                     </li>
                 </ul>
                 <section>
-                    <button>Register</button>
-                    <button>Login</button>
+                    <button>
+                        <Link to="/register" href="">Register</Link>
+                    </button>
+                    <button>
+                        <Link to="/login" href="">Login</Link>
+                    </button>
                 </section>
                     <span>Register for more information</span>
             </nav>
 
             <section>
-                <span>English</span>
+                <span>EN</span>
                 <img src="/img/usaFlag.svg" alt="" />
             </section>
         </header>
